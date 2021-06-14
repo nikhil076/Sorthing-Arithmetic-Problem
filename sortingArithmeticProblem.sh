@@ -19,3 +19,10 @@ read -p "Enter third element " c
 
 echo ${arr[@]}
 
+declare -a array
+for i in {0..3}
+do
+	array[$i]=${arr[$i]}
+done
+
+echo ${array[@]}
