@@ -6,3 +6,5 @@ result1=`echo $a $b $c | awk '{print $1 + $2 * $3 }'`
 echo "result is $result1"
 result2=`echo $a $b $c | awk '{print $1 * $2 + $3 }'`
 echo "result is $result2"
+result3=`echo $c $a $b | awk '{print $1 + $2 / $3 }'`
+echo "result is $result3"
