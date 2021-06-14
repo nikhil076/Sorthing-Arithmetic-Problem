@@ -3,8 +3,10 @@ read -p "Enter first element " a
 read -p "Enter second element " b
 read -p "Enter third element " c
 result1=`echo $a $b $c | awk '{print $1 + $2 * $3 }'`
-echo "result is $result1"
+echo "result 1 is $result1"
 result2=`echo $a $b $c | awk '{print $1 * $2 + $3 }'`
-echo "result is $result2"
+echo "result 2 is $result2"
 result3=`echo $c $a $b | awk '{print $1 + $2 / $3 }'`
-echo "result is $result3"
+echo "result 3 is $result3"
+result4=`echo $a $b $c | awk '{print $1 % $2 + $3 }'`
+echo "result 4 is $result4"
