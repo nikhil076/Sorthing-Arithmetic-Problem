@@ -1,3 +1,4 @@
+#!/bin/bash -x
 declare -A arr
 echo "welcome to sorting arithmetic"
 read -p "Enter first element " a
@@ -26,3 +27,6 @@ do
 done
 
 echo ${array[@]}
+
+desc=`sort -n -r <(printf "%s\n" "${arr[@]}")`
+echo $desc
