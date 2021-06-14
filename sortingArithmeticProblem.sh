@@ -29,4 +29,6 @@ done
 echo ${array[@]}
 
 desc=`sort -n -r <(printf "%s\n" "${arr[@]}")`
-echo $desc
+echo "Descending order is $desc"
+asc=`sort -n <(printf "%s\n" "${arr[@]}")`
+echo "Ascending order is $asc"
